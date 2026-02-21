@@ -1,0 +1,82 @@
+.car-card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(232, 69, 30, 0.6);
+}
+
+.car-card-media {
+  position: relative;
+  height: 200px;
+}
+
+.car-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.car-unavailable {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 95, 95, 0.2);
+  color: #ff9f9f;
+  border: 1px solid rgba(255, 95, 95, 0.35);
+}
+
+.car-card-body {
+  padding: 16px;
+  display: grid;
+  gap: 10px;
+}
+
+.car-card-body h3 {
+  margin: 0;
+  font-family: 'Syne', sans-serif;
+}
+
+.car-card-body p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.car-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.car-meta span {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--card-2);
+  text-transform: capitalize;
+}
+
+.car-card-footer {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.car-card-footer strong {
+  color: #fff;
+}
+
+.car-card-footer strong span {
+  color: var(--accent);
+}

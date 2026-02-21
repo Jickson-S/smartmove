@@ -1,0 +1,54 @@
+.filter-panel {
+  padding: 18px;
+  display: grid;
+  gap: 22px;
+  position: sticky;
+  top: 92px;
+}
+
+.filter-group {
+  display: grid;
+  gap: 10px;
+}
+
+.filter-group h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.chip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  border: 1px solid var(--border);
+  background: #101010;
+  color: #dadada;
+  padding: 7px 12px;
+  border-radius: 999px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.chip:hover,
+.chip.active {
+  border-color: var(--accent);
+  color: #fff;
+  background: var(--accent-soft);
+}
+
+.price-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+@media (max-width: 980px) {
+  .filter-panel {
+    position: static;
+  }
+}

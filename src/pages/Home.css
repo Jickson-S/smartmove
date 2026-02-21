@@ -1,0 +1,164 @@
+.home-hero {
+  padding-top: 44px;
+}
+
+.home-hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.hero-kicker {
+  color: var(--accent);
+  font-weight: 700;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+}
+
+.home-hero h1 {
+  margin: 0 0 14px;
+  font-size: clamp(34px, 5vw, 58px);
+  line-height: 1.02;
+}
+
+.home-hero p {
+  color: #cecece;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.hero-actions {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+}
+
+.hero-card {
+  padding: 20px;
+}
+
+.hero-card h3 {
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+
+.hero-card ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #d2d2d2;
+  display: grid;
+  gap: 10px;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.section-head h2 {
+  margin: 0;
+  font-size: clamp(26px, 4vw, 36px);
+}
+
+.view-all-link {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.feature-card {
+  padding: 16px;
+  transition: border-color 0.24s ease, transform 0.24s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(232, 69, 30, 0.45);
+}
+
+.feature-card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-family: 'Syne', sans-serif;
+}
+
+.feature-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.available-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.skeleton-card {
+  height: 360px;
+}
+
+.cta-banner {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  border-color: rgba(232, 69, 30, 0.4);
+}
+
+.cta-banner h2 {
+  margin: 0 0 8px;
+}
+
+.cta-banner p {
+  margin: 0;
+  color: #c7c7c7;
+}
+
+.home-footer {
+  border-top: 1px solid var(--border);
+  padding: 20px 0 38px;
+}
+
+.home-footer p {
+  margin: 0;
+  color: #888;
+}
+
+@media (max-width: 1100px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .available-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .home-hero-grid,
+  .cta-banner {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .hero-actions {
+    flex-wrap: wrap;
+  }
+
+  .feature-grid,
+  .available-grid {
+    grid-template-columns: 1fr;
+  }
+}
